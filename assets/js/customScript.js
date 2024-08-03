@@ -1,5 +1,5 @@
 
-
+var url = "http://16.171.35.95/:8080"
 $(document).ready(function() {
 
     var citiesDataList = document.getElementById('cities-datalist');
@@ -7,7 +7,7 @@ $(document).ready(function() {
     
     
         $.ajax({
-            url: "http://localhost:8080/fetchMaster"
+            url: url+"/fetchMaster"
         }).then(function(data, status, jqxhr) {
           if(data){
             var jsonOptions = JSON.parse(data);
@@ -45,7 +45,7 @@ $(document).ready(function() {
       $.ajax({
             type: "POST",
             contentType: "application/json; charset=utf-8",
-            url: "http://localhost:8080/fetchArea",
+            url: url+"/fetchArea",
             data: JSON.stringify({"city":$(this).val()}),
             dataType: 'json',
             cache: false,
@@ -82,7 +82,7 @@ $(document).ready(function() {
       $.ajax({
             type: "POST",
             contentType: "application/json; charset=utf-8",
-            url: "http://localhost:8080/filterData",
+            url: url+"/filterData",
             data: JSON.stringify(data),
             dataType: 'json',
             cache: false,
