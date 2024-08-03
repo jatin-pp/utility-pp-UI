@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Panda</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <!-- <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Anon</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+ -->
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="https://www.propertypanda.com/front/images/ftr_logo.png" alt="Anon's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <!-- <input type="search" name="search" class="search-field" placeholder="Enter your product name..."> -->
+           <div>
+            <input type="text" id="city" list="cities-datalist"  class="search-field" placeholder="Enter City Name ">
+            <datalist id="cities-datalist">
+            </datalist>  
+      <input type="text" id="area" list="area-dataList" class="search-field" placeholder="Enter Area" disabled>
+
+      <datalist id="area-dataList">
+      </datalist>
+  <input type="text" id="propertyType" list="propertyType-datalist" class="search-field" placeholder="Enter Property Type">
+  <datalist id="propertyType-datalist"></datalist>
+           </div>
+         
+          <!-- <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button> -->
+          <button type="submit"  onclick="getFilteredData()">Find Property</button>
+        </div>
+
+     
+
+      </div>
+
+    </div>
+
+ 
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+  
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <div class="product-box">
+
+   
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <!-- <h2 class="title">Listed Projects</h2> -->
+            <div id="result" class="product-grid "></div>  
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+<!-- 
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+
+       
+
+      </div>
+
+    </div>
+
+  
+
+  </footer> -->
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/customScript.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
